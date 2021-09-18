@@ -1,0 +1,6 @@
+Starting kafka service
+
+1. bin/zookeeper-server-start.sh config/zookeeper.properties
+2. bin/kafka-server-start.sh config/server.properties
+3. bin/kafka-topics.sh --create --topic gpio-service --bootstrap-server localhost:9092
+4. bin/kafka-console-consumer.sh --topic gpio-service --from-beginning --bootstrap-server localhost:9092
